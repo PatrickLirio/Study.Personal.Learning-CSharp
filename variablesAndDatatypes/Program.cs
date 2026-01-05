@@ -14,7 +14,7 @@ namespace variablesAndDatatypes
     {
         static void Main(string[] args)
         {
-
+            
             /*
              * We are going to apply already the 4 Programming Principles
              * - KISS (Keep It Simple Stupid)
