@@ -1,7 +1,0 @@
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\bin\Debug\variablesAndDatatypes.exe.config
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\bin\Debug\variablesAndDatatypes.exe
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\bin\Debug\variablesAndDatatypes.pdb
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\obj\Debug\variablesAndDatatypes.csproj.AssemblyReference.cache
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\obj\Debug\variablesAndDatatypes.csproj.CoreCompileInputs.cache
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\obj\Debug\variablesAndDatatypes.exe
-C:\Users\pbene\OneDrive\Documents\Projects\Learning C#\variablesAndDatatypes\obj\Debug\variablesAndDatatypes.pdb
