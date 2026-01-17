@@ -15,7 +15,7 @@ namespace variablesAndDatatypes
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Part 2!");
-
+            #region -- About Variables --
             #region --- Local variables ---
 
             /*
@@ -55,25 +55,72 @@ namespace variablesAndDatatypes
             #endregion
 
             Console.WriteLine("=======");
-
+            #region -- Classic and Instance Variables --
+            //Instance Variable 
             // Let us access the value of the public and private variable in the ScopeVariablesExample
             var accessingPublicAndPrivateClass = new ScopeVariablesExample(); // storing the values of ScopeVariableExample to a new variable by making it as an instance
-            Console.WriteLine(accessingPublicAndPrivateClass.samplePublitInt);
-            accessingPublicAndPrivateClass.samplePublitInt = 821;
-            Console.WriteLine(accessingPublicAndPrivateClass.samplePublitInt);
+            Console.WriteLine(accessingPublicAndPrivateClass.samplePublicInt);
+            accessingPublicAndPrivateClass.samplePublicInt = 821;
+            Console.WriteLine(accessingPublicAndPrivateClass.samplePublicInt);
 
+            // Class or Static Variable
             Console.WriteLine("*************");
             Console.WriteLine(ScopeVariablesExample.sampleStaticOrClassVariableInt);
             ScopeVariablesExample.sampleStaticOrClassVariableInt++;
             Console.WriteLine(ScopeVariablesExample.sampleStaticOrClassVariableInt);
+            #endregion
+
+            #endregion
 
 
+            #region -- About Datatypes --
+            //Parse & Convert
+            string stringNumber = "5";
+            int parsedNumber = int.Parse(stringNumber); // Using Parse
+            int result = parsedNumber * 10;
+            Console.WriteLine($"The result is : {result}");
+            Console.WriteLine($"The Data Type is : {result.GetType()}");
 
+            string anotherStringNumber = "15";
+            int convertedNumber = Convert.ToInt32(anotherStringNumber); // Using Convert
+            int anotherResult = convertedNumber * 10;
+            Console.WriteLine($"The another result is : {anotherResult}");
+            Console.WriteLine($"The Data Type is : {anotherResult.GetType()}");
+
+            // using tryparse
+            string invalidNumber = "abc";
+            int number;
+            int.TryParse(invalidNumber, out number);
+            Console.WriteLine($"TryParse result: {number}"); // Outputs 0 if parsing fails
+
+            // using tryparse as a boolean check
+            string validNumber = "123";
+            int.TryParse(validNumber, out number);
+            Console.WriteLine("TryParse successful: " + (number != 0)); // Outputs True if parsing is successful
+
+            // inline variable declaration with tryparse
+            string inlineNumber = ":'(";
+            if (int.TryParse(inlineNumber, out int inlineParsedNumber))
+            {
+                Console.WriteLine($"Inline TryParse successful: {inlineParsedNumber}");
+            }
+            else
+            {
+                Console.WriteLine("Inline TryParse failed.");
+            }
+
+            /*Note!
+             * Using parse function is also applicable to other 
+             * dataypes like double, float, decimal, etc.
+             */
+            #endregion
         }
 
-        
+
 
     }
+
+    #region -- Demo Class --
     /*
      * Scope Variables, Field Variables, Class Variable and Instance Variable
      *  Keywords (Static,Readonly,Const)
@@ -84,7 +131,7 @@ namespace variablesAndDatatypes
 
         public static int sampleStaticOrClassVariableInt = 30;//Class Variable  
 
-        public int samplePublitInt = 460;
+        public int samplePublicInt = 460;
         private int samplePrivateInt = 780;
 
         /*Note!
@@ -153,5 +200,9 @@ namespace variablesAndDatatypes
              */
         }
     }
+
+    #endregion
+
+
 
 }
