@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fruit\Orange.cs" />
+    <Compile Include="Fruit\Strawberry.cs" />
+    <Compile Include="Heroes\MobileLegends\Fighter\LapuLapu.cs" />
+    <Compile Include="Heroes\MobileLegends\Fighter\Zilong.cs" />
+    <Compile Include="Heroes\MobileLegends\Mage\Change.cs" />
+    <Compile Include="Heroes\MobileLegends\Mage\Nana.cs" />
+    <Compile Include="Heroes\MobileLegends\Marksman\Miya.cs" />
+    <Compile Include="Heroes\Pinoy\Bisaya\LapuLapu.cs" />
+    <Compile Include="Heroes\Pinoy\Tagalog\Mabini.cs" />
+    <Compile Include="Heroes\Pinoy\Tagalog\Rizal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
